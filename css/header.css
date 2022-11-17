@@ -1,0 +1,60 @@
+.header{
+    display: flex;
+    height: 70px;
+    align-items: stretch;
+    justify-content: space-between;
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+}
+.header-logo{
+    width: 180px;
+    margin-left: 100px;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+    width: 500px;
+
+}
+.nav-button{
+    width: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    border-color: none;
+    border-style: none;
+    opacity: 100%;
+    background-color: white;
+    
+}
+.nav-button:hover{
+    opacity: 50%;
+    
+}
+.nav-button:active{
+    opacity: 70%;
+
+}
+.button-divider{
+    border-left-style: solid;
+    border-color: #30975f;
+    border-width: 1px;
+    height: 45px;
+
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+.sticky + .content {
+    padding-top: 102px;
+}
+.content {
+    padding: 16px;
+}
+
