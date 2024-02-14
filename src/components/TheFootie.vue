@@ -1,7 +1,7 @@
 <template>
     <div id="footer">
         <div>
-            <span>bom-bas-tik! </span>
+            <span>what we did under the tree. </span>
             <a href="https://www.youtube.com/watch?v=s3DE9-5Lmq4">AlphenLimited </a>
             <i><img style="height: 1em; width: 1em"
                     src="https://lastfm.freetls.fastly.net/i/u/500x500/ccd2638774ef6e00e497694aa47f47d2"></i>

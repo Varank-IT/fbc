@@ -4,34 +4,19 @@
         <div class="map-frame">
             <div class="map">
                 <div id="address">
-                    <h3>Yeditepe Üniversitesi</h3>
+                    <h3>Varank Fen Lisesi</h3>
                     <i class="fas fa-map-marker-alt"></i>
-                    Kayışdağı,<br> İnönü Mahallesi, <br> Kayışdağı Caddesi, <br> 34755
-                    Ataşehir/İstanbul<br><br>
-                    <iframe id="frame"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3012.4338093090264!2d29.150023615693666!3d40.97198072960593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac5efbd78551d%3A0x2dac4ac9e6f7c925!2sYeditepe%20%C3%9Cniversitesi!5e0!3m2!1str!2str!4v1676021517681!5m2!1str!2str"
-                        width="250px" height="250px" style="border:0;" allowfullscreen="" loading="lazy"
+                    Aydınevler,<br> Saygı Caddesi, <br> No 28, <br> 34854
+                    Maltepe/İstanbul<br><br>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96388.89504832272!2d29.01034673353016!3d40.978131105908766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac6880b8786f5%3A0x1da8998bd491da0b!2s%C5%9Eehit%20%C4%B0lhan%20Varank%20Fen%20Lisesi!5e0!3m2!1str!2str!4v1678792565017!5m2!1str!2str"
+                        width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <br>
                 </div>
             </div>
         </div>
 
-        <div class="map-frame">
-            <div class="map">
-                <div id="address">
-                    <h3>Kültür Merkezi</h3>
-                    <i class="fas fa-map-marker-alt"></i>
-                    Kozyatağı,<br> Buket Sokak, <br> No. 1 <br> 34000
-                    Kadıköy/İstanbul<br><br>
-                    <iframe id="frame"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1506.271123082359!2d29.091576747197273!3d40.969605758583825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac7acd27c98e5%3A0xb10f29abc624ff1c!2zS0FESUvDllkgQkVMRUTEsFlFU8SwIEtPWllBVEHEnkkgS8OcTFTDnFIgTUVSS0VaxLA!5e0!3m2!1str!2str!4v1676022596997!5m2!1str!2str"
-                        width="250px" height="250px" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <br>
-                </div>
-            </div>
-        </div>
     </section>
 </template>
 
@@ -49,7 +34,7 @@ export default {
 
 <style scoped>
 .map-section {
-    padding: 2vh 12vw;
+    padding: 2vh 25vw;
     text-align: center;
 }
 

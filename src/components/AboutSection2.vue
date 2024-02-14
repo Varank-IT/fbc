@@ -2,7 +2,7 @@
     <section class="faq-section">
         <div class="faq-warp">
             <div class="container">
-                <SectionLabel label="Sıkça Sorulan Sorular" />
+                <SectionLabel label="Komiteler" />
                 <div class="row">
                     <div class="faq">
                         <AccordionItem v-for="(faq, index) in faqs" :key="faq" :info="faq" :badgeNumber="index + 1" />

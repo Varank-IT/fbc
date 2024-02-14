@@ -1,8 +1,9 @@
 <template>
     <section class="faq-section">
+        <div id="sss">
         <div class="faq-warp">
             <div class="container">
-                <SectionLabel label="Komiteler" />
+                <SectionLabel label="Sıkça Sorulan Sorular" />
                 <div class="row">
                     <div class="faq">
                         <AccordionItem v-for="(faq, index) in faqs" :key="faq" :info="faq" :badgeNumber="index + 1" />
@@ -10,6 +11,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </section>
 </template>
 
@@ -47,7 +49,7 @@ export default {
 <style scoped>
 .faq-section {
     min-height: 100vh;
-    min-height: 50vh;
+    min-height: 20vh;
     font-weight: bold;
     text-align: left;
 }

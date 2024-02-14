@@ -7,7 +7,13 @@
                     <h1>Fen Bilimleri Çalıştayı</h1>
                     <h3>6-7 Mayıs</h3>
                     <a class="btn_one" href="">Başvur</a>
-                    <!--<a class="social"><i class="fab fa-instagram"></i></a> it aint rendering properly... yet :> -->
+                    <table>
+                        <tr>
+                            <td class="animated fadeIn" style="animation-delay:1s;"><a class="social"
+                                    href="https://www.instagram.com/fenbilimlericalistayi/"><i
+                                        class="fab fa-instagram"></i></a></td>
+                        </tr>
+                    </table>
                 </td>
             </tr>
         </table>
@@ -48,10 +54,6 @@ var x = setInterval(function () {
     background: #3d5a99;
     color: #ffffff;
 }
-
-/*#top_part tr td .button {
-    width: 50%;
-}*/
 
 #landing {
     height: 100vh;
@@ -97,33 +99,9 @@ var x = setInterval(function () {
 
 #landing table tr td {
     /*   width: 20% !important; */
-    text-align: left;
+    text-align: center;
 }
 
-/*
-.social {
-    display: inline-block;
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
-    color: #ffffff;
-    background: linear-gradient(0deg, rgba(93, 200, 232, 1) 0%, rgba(0, 140, 242, 1) 100%);
-    padding: 8px 40px;
-    border-radius: 80px;
-    font-weight: bold;
-    margin-left: auto;
-    margin-right: auto;
-    transition: 0.4s ease-in-out;
-    text-decoration: none;
-    font-family: 'Cinzel', serif;
-}
-
-.social:hover {
-    box-shadow: 0px 10px 30px #111822;
-    cursor: pointer;
-    color: #111822;
-    background: #d1ab74;
-}
-*/
 .btn_one {
     display: inline-block;
     font-size: 18px;
@@ -136,7 +114,7 @@ var x = setInterval(function () {
     border-radius: 80px;
     font-weight: bold;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     transition: 0.4s ease-in-out;
@@ -145,6 +123,23 @@ var x = setInterval(function () {
 }
 
 .btn_one:hover {
+    cursor: pointer;
+    color: #3d5a99;
+    background: #ffffff;
+}
+
+.social {
+    color: #ffffff;
+    font-size: 23px;
+    padding: 12px 17px;
+    border-radius: 50%;
+    background: transparent;
+    transition: 0.4s ease-in-out;
+    font-weight: bold;
+    margin: 0px 8px;
+}
+
+.social:hover {
     cursor: pointer;
     color: #3d5a99;
     background: #ffffff;
@@ -207,9 +202,12 @@ var x = setInterval(function () {
     }
 
     .btn_one {
-        padding: 6px 20px;
+        padding: 8px 1px;
         width: 60%;
-        margin: 3vh auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4vh;
+        margin-bottom: 1vh;
         background: transparent;
         color: #ffffff;
         text-decoration: none;
@@ -218,7 +216,7 @@ var x = setInterval(function () {
 
     .btn_one:hover {
         box-shadow: 0px 1px 1px #ffffff;
-        color: #008cf2;
+        color: #3d5a99;
         cursor: pointer;
     }
 }

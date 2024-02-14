@@ -1,13 +1,24 @@
 <template>
-    <header id="header" class="animated slideInDown" :class="{ 'isScrolled': hasScrolled }" style="animation-delay:0.8s;">
-        <table>
-            <tr>
-                <td id="logo">V | FBÇ</td>
-                <td id="navigation">
-                    <a href="">Başvur</a>
-                </td>
-            </tr>
-        </table>
+    <header class="nav animated slideInDown" :class="{ 'isScrolled': hasScrolled }" style="animation-delay:0.8s;">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                V | FBÇ
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="nav-links">
+            <a href="https://varankfl.com/fbc/adres" target="_self">Nasıl Gidilir</a>
+            <a href="https://varankfl.com/fbc/komiteler" target="_self">Komiteler</a>
+            <a href="https://varankfl.com/fbc/galeri" target="_self">Galeri</a>
+        </div>
     </header>
 </template>
 
@@ -20,7 +31,7 @@ export default {
     methods: {
         handleScroll() {
             if (window.innerWidth >= 1) {
-                this.hasScrolled = document.body.scrollTop > 80 || document.documentElement.scrollTop > 80;
+                this.hasScrolled = document.body.scrollTop > 60 || document.documentElement.scrollTop > 60;
             }
         }
     },
@@ -34,17 +45,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/* so this is how vue works -a*/
-// yes, every vue component has 3 parts, a template for your haitch tee em el,z a script for your functional shit and a style for your styling shit -m
-// also notice how scss can use // for comments -m
-// that's awesome! -a
-// pro tip: use ctrl+/ to automatically comment/uncomment something -m
-// oh, thanks! -a
-
 header {
     width: 100vw;
-    padding-top: 1.5vh;
-    padding-bottom: 1.5vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     position: fixed;
     font-weight: bold;
     background-color: #3d5a99;
@@ -60,50 +64,51 @@ header.isScrolled {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.09);
 }
 
-
-header table {
-    width: 100%;
+.nav>.nav-header {
+    display: inline;
 }
 
-#logo {
-    width: 20%;
-    padding-left: 2vw;
+.nav>.nav-header>.nav-title {
+    display: inline-block;
     font-size: 24px;
+    padding-left: 2vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-/* i want to die */
-
-#navigation {
-    width: 50%;
-    padding-right: 2vw;
+.nav>.nav-btn {
+    display: none;
 }
 
-#navigation {
-    text-align: right;
+.nav>.nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
 }
 
-#navigation a {
+.nav>.nav-links>a {
     color: inherit;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-bottom: 2px solid transparent;
-    margin-left: 4vw;
-    transition: 0.4s ease-in-out;
+    display: inline-block;
+    padding-right: 2vw;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    text-decoration: none
 }
 
-#navigation a:hover {
+.nav>.nav-links>a:hover {
     border-bottom: 2px solid #fff;
 }
 
+.nav>#nav-check {
+    display: none;
+}
 
-@media screen and (max-width: 1000px) {
+@media (max-width:1000px) {
 
     header {
-        /* width: 92vw; */
-        width: 100vw;
-        /* padding: 6vh 4vw; */
-        padding-top: 1.5vh;
-        padding-bottom: 1.5vh;
+        width: 100%;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
         position: fixed;
         font-weight: bold;
         background: #3d5a99;
@@ -119,40 +124,60 @@ header table {
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
     }
 
-    header table {
-        width: 100%;
-    }
-
-    #logo {
+    .nav>.nav-header>.nav-title {
+        display: inline-block;
         width: 70%;
         padding-left: 6vw;
         font-size: 18px;
     }
 
-    /* i want to die */
-
-    #navigation {
-        width: 70%;
+    .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        margin-top: 10px;
         padding-right: 6vw;
+    }
+
+    .nav>.nav-btn>label {
+        display: inline-block;
+
+    }
+
+    .nav>.nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #BEBEBE;
+    }
+
+    .nav>.nav-links {
+        position: absolute;
+        display: block;
         font-size: 18px;
+        width: 100%;
+        color: #ffffff;
+        background-color: #3d5a99;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+        padding-left: 6vw;
     }
 
-    #navigation {
-        text-align: right;
+    .nav>.nav-links>a {
+        display: block;
+        width: 100%;
     }
 
-    #navigation a {
-        color: inherit;
-        text-decoration: none;
-        padding: 5px 10px;
-        border-bottom: 2px solid transparent;
-        margin-left: 4vw;
-        transition: 0.4s ease-in-out;
+    .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
     }
 
-    #navigation a:hover {
-        border-bottom: 2px solid #fff;
+    .nav>#nav-check:checked~.nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
     }
-
 }
 </style>

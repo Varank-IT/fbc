@@ -20,7 +20,7 @@ h1 {
     border-bottom: 2px;
     border-bottom-width: auto;
     border-bottom-style: solid;
-    border-bottom-color: #008cf2;
+    border-bottom-color: #3d5a99;
     width: auto;
     text-align: center;
     font-size: 40px;

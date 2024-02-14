@@ -34,11 +34,13 @@ onMounted(() => {
 /* yayyy */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Sans+Pro:wght@400&display=swap');
+
 
 
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     padding: 0px;
     margin: 0px;
     max-width: 100vw;

@@ -2,8 +2,7 @@
     <div class="container">
         <Hero />
         <AboutSection />
-        <AboutSection2 />
-        <FaqSection />
+        <MapSection />
         <TransportationSection />
     </div>
 </template>
@@ -11,8 +10,7 @@
 <script>
 import Hero from '../components/Hero.vue';
 import AboutSection from '../components/AboutSection.vue';
-import AboutSection2 from '../components/AboutSection2.vue';
-import FaqSection from '../components/FaqSection.vue';
+import MapSection from '../components/MapSection.vue';
 import TransportationSection from '../components/TransportationSection.vue';
 
 
@@ -21,8 +19,7 @@ export default {
     components: {
         Hero,
         AboutSection,
-        AboutSection2,
-        FaqSection,
+        MapSection,
         TransportationSection,
     }
 }
